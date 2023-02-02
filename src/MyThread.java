@@ -12,6 +12,7 @@ class MyThread extends Thread {
                 System.out.println("Я " + getName() + ". Всем привет!" );
             }
         } catch (InterruptedException err) {
+            System.out.println("Поток " + Thread.currentThread().getName() + " прерван");
         } finally{
             System.out.printf("%s завершен\n", getName());
         }
